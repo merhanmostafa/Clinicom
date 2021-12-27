@@ -1,0 +1,911 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "regular";
+  src: url(../Fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: "semibold";
+  src: url(../Fonts/Inter-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "bold";
+  src: url(../Fonts/Inter-Bold.ttf);
+}
+
+/* for the background*/
+@-webkit-keyframes bg-pan-bottom {
+  0% {
+    background-position: 50% 0;
+  }
+  100% {
+    background-position: 50% 100%;
+  }
+}
+
+@keyframes bg-pan-bottom {
+  0% {
+    background-position: 50% 0;
+  }
+  100% {
+    background-position: 50% 100%;
+  }
+}
+
+/* navbar */
+nav {
+  width: 90%;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+  padding: 10px 20px;
+  background: #00acc1;
+  z-index: 999;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  margin: 10px 15px;
+}
+
+nav ul li {
+  margin: 0px 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-family: "regular";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+nav ul li a:hover {
+  color: #004d83;
+  text-decoration: none;
+}
+
+nav .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .buttons a {
+  text-decoration: none;
+}
+
+nav .buttons a button {
+  font-size: 15px;
+  font-family: "bold";
+  color: white;
+  text-transform: capitalize;
+  background: none;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 5px 20px;
+  margin: 10px;
+  outline: none;
+}
+
+nav .buttons a button:hover {
+  background-color: white;
+  color: #00acc1;
+}
+
+/* footer*/
+footer .container {
+  position: relative;
+  height: 75vh;
+  width: 100%;
+  max-width: 100%;
+  background-image: url(../Images/footer-bg.png);
+  background-size: cover;
+  overflow: hidden;
+}
+
+footer .container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #004d83;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+footer .container .footer-sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 50px;
+}
+
+footer .container .footer-sections section {
+  width: 70%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .container .footer-sections section h2 {
+  font-size: 25px;
+  font-family: "semibold";
+  text-transform: capitalize;
+  color: white;
+  position: relative;
+}
+
+footer .container .footer-sections section h2::after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  bottom: -15px;
+  left: 0;
+  height: 2px;
+  background: #00acc1;
+}
+
+footer .container .footer-sections section ul {
+  list-style: none;
+  margin: 30px auto;
+}
+
+footer .container .footer-sections section ul li {
+  margin: 20px auto;
+}
+
+footer .container .footer-sections section ul li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "regular";
+  color: white;
+}
+
+footer .container .footer-sections section ul li a:hover {
+  color: #00acc1;
+}
+
+footer .container .footer-sections section p {
+  width: 80%;
+  font-family: "regular";
+  font-size: 17px;
+  color: white;
+}
+
+footer .container .footer-sections section .details {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+footer .container .footer-sections section h3 {
+  font-family: "semibold";
+  font-size: 18px;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 16px;
+  text-transform: capitalize;
+}
+
+footer .container .footer-sections section .blood-btn {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family: "regular";
+  background-color: #00acc1;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+footer .container .footer-sections section .blood-btn i {
+  margin-right: 10px;
+}
+
+footer .container .footer-sections section .blood-btn:hover {
+  color: #00acc1;
+  background-color: white;
+}
+
+footer .container .footer-sections section .contacts {
+  margin-top: 50px;
+}
+
+footer .container .footer-sections section .contacts span {
+  color: white;
+  font-size: 20px;
+  font-family: "bold";
+  text-transform: capitalize;
+  margin-right: 15px;
+}
+
+footer .container .footer-sections section .contacts a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .container .footer-sections section .contacts a i {
+  font-size: 19px;
+  margin-right: 15px;
+}
+
+footer .container .footer-sections section .contacts a:hover {
+  color: #00acc1;
+}
+
+footer .container .copywrite {
+  padding-top: 80px;
+  position: relative;
+}
+
+footer .container .copywrite::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+footer .container .copywrite section {
+  width: 90%;
+  margin: auto;
+}
+
+footer .container .copywrite section p {
+  color: white;
+  font-family: "regular";
+  font-size: 15px;
+}
+
+footer .container .copywrite section p span {
+  font-family: "bold";
+  text-transform: capitalize;
+}
+
+footer .container .copywrite section ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+footer .container .copywrite section ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+  font-family: "regular";
+  font-size: 15px;
+}
+
+footer .container .copywrite section ul li a:hover {
+  color: #00acc1;
+}
+
+/* Home Page*/
+header .header-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../Images/header_img.jpg);
+  background-size: cover;
+  overflow: hidden;
+  -webkit-animation: bg-pan-bottom 2s both;
+          animation: bg-pan-bottom 2s both;
+}
+
+header .header-container::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+header .header-container .content {
+  margin: 180px 150px;
+}
+
+header .header-container .content h1 {
+  color: #fff;
+  font-size: 75px;
+  font-family: "regular";
+  text-transform: capitalize;
+}
+
+header .header-container .content h1 span {
+  font-family: "bold";
+  text-transform: capitalize;
+}
+
+header .header-container .content p {
+  width: 75%;
+  margin: 50px 0px;
+  font-size: 18px;
+  font-family: "regular";
+  color: #fff;
+}
+
+header .header-container .content a.discover-btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: none;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 10px 60px;
+  font-family: "semibold";
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+header .header-container .content a.discover-btn:hover {
+  background-color: #fff;
+  color: #00acc1;
+}
+
+header .header-container .content form {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 60px 20px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .header-container .content form h2 {
+  font-size: 28px;
+  font-family: "bold";
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header .header-container .content form input,
+header .header-container .content form select {
+  width: 95%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 10px auto;
+  outline: none;
+}
+
+header .header-container .content form input[type="submit"] {
+  width: 60%;
+  text-align: center;
+  margin: 30px auto;
+  background: #00acc1;
+  background: -webkit-gradient(linear, left top, right top, from(#00acc1), to(#004d83));
+  background: linear-gradient(90deg, #00acc1 0%, #004d83 100%);
+  color: #fff;
+  font-family: "bold";
+  font-size: 15px;
+  padding: 15px 80px;
+  border-radius: 25px;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+}
+
+main section.doctors {
+  text-align: center;
+  margin: 50px auto;
+}
+
+main section.doctors h1 {
+  color: #00acc1;
+  font-family: "bold";
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+main section.doctors h2 {
+  color: #000;
+  font-family: "bold";
+  font-size: 45px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+/*sign up & login Page*/
+main .signup-container,
+main .login-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../Images/register_bg.jpg);
+  background-size: cover;
+  overflow: hidden;
+  -webkit-animation: bg-pan-bottom 2s both;
+          animation: bg-pan-bottom 2s both;
+}
+
+main .signup-container form,
+main .login-container form {
+  width: 32%;
+  margin: 120px auto;
+  padding: 40px;
+  background-color: rgba(0, 172, 193, 0.6);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .signup-container form h2,
+main .login-container form h2 {
+  font-size: 28px;
+  font-family: "bold";
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+main .signup-container form h3,
+main .login-container form h3 {
+  position: relative;
+  font-size: 18px;
+  font-family: "semibold";
+  color: #000;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 10px auto;
+}
+
+main .signup-container form h3::before, main .signup-container form h3::after,
+main .login-container form h3::before,
+main .login-container form h3::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 150px;
+  height: 1.5px;
+  background-color: #000;
+}
+
+main .signup-container form h3::before,
+main .login-container form h3::before {
+  left: 80px;
+  margin-right: 10px;
+}
+
+main .signup-container form h3::after,
+main .login-container form h3::after {
+  right: 80px;
+}
+
+main .signup-container form input,
+main .login-container form input {
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 10px auto;
+  outline: none;
+}
+
+main .signup-container form .social-btn,
+main .login-container form .social-btn {
+  margin: 8px auto;
+}
+
+main .signup-container form .social-btn a,
+main .login-container form .social-btn a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+main .signup-container form .social-btn a i,
+main .login-container form .social-btn a i {
+  font-size: 15px;
+  color: #00acc1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+main .signup-container form a,
+main .login-container form a {
+  text-decoration: none;
+}
+
+main .signup-container form a button.register-btn,
+main .login-container form a button.register-btn {
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  margin: 20px auto;
+  color: #00acc1;
+  font-family: "bold";
+  font-size: 19px;
+  padding: 13px 80px;
+  border-radius: 30px;
+  text-transform: capitalize;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+main .signup-container form a button.register-btn i,
+main .login-container form a button.register-btn i {
+  margin-left: 5px;
+  margin-top: 3px;
+  color: #00acc1;
+  font-size: 15px;
+}
+
+/* Contact Us*/
+header .contactus-container {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  background: url(../Images/contactus_img.jpg);
+  overflow: hidden;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .contactus-container::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+header .contactus-container h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: "bold";
+  color: #fff;
+  text-transform: capitalize;
+  font-family: "bold";
+  z-index: 1;
+}
+
+main .contactus-content .row {
+  margin: 50px 0px;
+}
+
+main .contactus-content form {
+  width: 80%;
+  margin: 35px auto;
+  padding: 30px;
+  border: 2px solid #00acc1;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .contactus-content form h2 {
+  font-size: 28px;
+  font-family: "bold";
+  color: #000;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+main .contactus-content form h2 span {
+  color: #00acc1;
+}
+
+main .contactus-content form input,
+main .contactus-content form textarea {
+  width: 90%;
+  border: none;
+  margin: 18px auto;
+  border-bottom: 1px solid #00acc1;
+  outline: none;
+  background: none;
+}
+
+main .contactus-content form input[type="submit"] {
+  width: 60%;
+  text-align: center;
+  margin: 30px auto;
+  background: #00acc1;
+  background: -webkit-gradient(linear, left top, right top, from(#00acc1), color-stop(50%, #004d83), to(#00acc1));
+  background: linear-gradient(90deg, #00acc1 0%, #004d83 50%, #00acc1 100%);
+  color: #fff;
+  font-family: "bold";
+  font-size: 15px;
+  padding: 15px 80px;
+  border-radius: 25px;
+  text-transform: capitalize;
+}
+
+main .contactus-content .col-md-5 {
+  margin: 20px auto;
+}
+
+main .contactus-content .col-md-5 .box {
+  margin: 60px auto;
+  position: relative;
+}
+
+main .contactus-content .col-md-5 .box::before {
+  content: "";
+  position: absolute;
+  width: 95%;
+  bottom: -15px;
+  border: 1px;
+  border-style: dashed;
+  border-color: #00acc1;
+}
+
+main .contactus-content .col-md-5 .box .box-icon i {
+  font-size: 18px;
+  color: #00acc1;
+  border: 2px solid #00acc1;
+  padding: 15px 17px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+main .contactus-content .col-md-5 .box .box-content h4 {
+  text-transform: capitalize;
+  font-family: "semibold";
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+main .contactus-content .col-md-5 .box .box-content p {
+  text-transform: capitalize;
+  font-family: "regular";
+  font-size: 16px;
+  color: #817e7e;
+}
+
+main .contactus-content .col-md-5 .box .box-content p a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "regular";
+  font-size: 16px;
+  color: #817e7e;
+}
+
+/* Doctors*/
+header .doctors-container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background: url(../Images/doctors_bg.jpg);
+  overflow: hidden;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .doctors-container::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+header .doctors-container h1 {
+  text-align: center;
+  font-size: 60px;
+  font-family: "bold";
+  color: #fff;
+  text-transform: capitalize;
+  z-index: 1;
+}
+
+header .doctors-container h1 i {
+  margin-right: 15px;
+}
+
+main .doctors-content .row {
+  width: 90%;
+  margin: 60px 100px;
+}
+
+main .doctors-content .row .card {
+  padding: 10px;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .doctors-content .row .card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+main .doctors-content .row .card .card-img {
+  width: 80%;
+  height: 30%;
+  border-radius: 50%;
+  border: 2px solid #00acc1;
+  margin: auto;
+}
+
+main .doctors-content .row .card .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .doctors-content .row .card .card-body a.btn {
+  text-decoration: none;
+  width: 95%;
+  background: #00acc1;
+  background: -webkit-gradient(linear, left top, right top, from(#00acc1), to(#004d83));
+  background: linear-gradient(90deg, #00acc1 0%, #004d83 100%);
+  color: #fff;
+  font-family: "bold";
+  font-size: 16px;
+  padding: 10px 22px;
+  border-radius: 30px;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+}
+
+main .doctors-content .row .card .card-body h2.card-title {
+  margin: 20px auto 10px auto;
+  font-size: 22px;
+  text-transform: capitalize;
+  color: #000;
+  font-family: "semibold";
+}
+
+main .doctors-content .row .card .card-body h3.card-title {
+  margin: 10px auto;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #00acc1;
+  font-family: "semibold";
+}
+
+main .doctors-content .row .card .card-body p.card-text {
+  margin: 10px auto;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #000;
+  font-family: "regular";
+}
+/*# sourceMappingURL=style.css.map */
