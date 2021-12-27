@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinicom</title>
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
+    <link rel="stylesheet" href="Fonts/all.min.css" />
+    <link rel="stylesheet" href="Fonts/fontawesome.min.css" />
+    <link rel="stylesheet" href="CSS/lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <nav>
+                <div class="logo"><a href="index.html"><img src="Images/logo-light.png" alt="logo"></a></div>
+                <ul class="menu">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Departments</a>
+                    </li>
+                    <li>
+                        <a href="Doctors.html">Doctors</a>
+                    </li>
+                    <li>
+                        <a href="ContactUs.html">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="buttons">
+                    <a href="login.html"><button class="login-btn">Login</button></a>
+                    <a href="SignUp.html"><button class="register-btn">Sign up</button></a>
+                </div>
+            </nav>
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-7 col-12">
+                        <h1>Meet the <span>Best Doctors</span></h1>
+                        <p>Preference entreaties compliment motionless ye literature. Day behaviour explained law
+                            remainder.</p>
+                        <a href="#" class="discover-btn">Discover</a>
+                    </div>
+                    <div class="col-md-5 col-12">
+                        <form action=" " method="post">
+                            <h2>Make an Appointment</h2>
+                            <input type="text" name="username" placeholder="Name" required>
+                            <select name="gender" id="gender" required>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="child">Child</option>
+                            </select>
+                            <select name="Department" id="dep">
+                                <option value="dep">Department</option>
+                                <option value="medicine">Medicine</option>
+                                <option value="care">Dental Care</option>
+                                <option value="traumatology">Traumatology</option>
+                            </select>
+                            <input type="datetime-local" min="09:00AM" max="11:30PM">
+                            <input type="submit" value="submit query" id="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="doctors">
+            <h1>doctors</h1>
+            <h2>our expertes</h2>
+            <div class="doctors-content">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card" style="width:18rem;">
+                            <img src="Images/doctor1_img.jpg" class="card-img" alt="doctor photo">
+                            <div class="card-body">
+                                <a href="index.html" class="btn">get appoinment</a>
+                                <h2 class="card-title">Dr. Jessica Jones</h2>
+                                <h3 class="card-title">CARDIOLOGIST</h3>
+                                <p class="card-text">Consultation - (012)3456789</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card" style="width: 18rem;">
+                            <img src="Images/doctor2_img.jpg" class="card-img" alt="doctor photo">
+                            <div class="card-body">
+                                <a href="index.html" class="btn">get appoinment</a>
+                                <h2 class="card-title">Prof. Ahel Natasha</h2>
+                                <h3 class="card-title">DENTAL SURGEON</h3>
+                                <p class="card-text">Consultation - (066)3456789</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card" style="width: 18rem;">
+                            <img src="Images/doctor3_img.jpg" class="card-img" alt="doctor photo">
+                            <div class="card-body">
+                                <a href="index.html" class="btn">get appoinment</a>
+                                <h2 class="card-title">dr.Gabriela Beckett</h2>
+                                <h3 class="card-title">COSMETIC SURGEON</h3>
+                                <p class="card-text">Consultation - (058)3456789</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contactus">
+            <div class="contactus-content">
+                <div class="row">
+                    <div class="col-md-7 col-12">
+                        <form action=" " method="post">
+                            <h2>contact our <span>support office</span></h2>
+                            <input type="text" name="username" placeholder="Name" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="text" name="phone" placeholder="Phone" required>
+                            <textarea name="subject" cols="30" rows="6" placeholder="Tell Us Your Message"></textarea>
+                            <input type="submit" value="send message">
+                        </form>
+                    </div>
+                    <div class="col-md-5 col-12">
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-6 col-12">
+                                    <div class="box-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-md-6 col-12">
+                                    <div class="box-content">
+                                        <h4>location</h4>
+                                        <p>
+                                            Barby Rd, Rugby CV22 5PX, United Kingdom
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-6 col-12">
+                                    <div class="box-icon">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-md-6 col-12">
+                                    <div class="box-content">
+                                        <h4>make a call</h4>
+                                        <p>
+                                            <a href="tel:44-20-7328-449"> +44-20-7328-449</a>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-6 col-12">
+                                    <div class="box-icon">
+                                        <i class="fas fa-envelope-open-text"></i>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-md-6 col-12">
+                                    <div class="box-content">
+                                        <h4>send a mail</h4>
+                                        <p>
+                                            <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-6 col-12">
+                                    <div class="box-icon">
+                                        <i class="far fa-clock"></i>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-md-6 col-12">
+                                    <div class="box-content">
+                                        <h4>opening hours</h4>
+                                        <p>
+                                            sat - mon: 8:00 - 15:45 <br>
+                                            tue - wed: 10:00 - 16:00
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-sections">
+                <section>
+                    <h2>About Us</h2>
+                    <p class="details">Required honoured trifling eat pleasure man relation. Assurance yet bed was
+                        improving furniture
+                        man. Distrusts delighted
+                    </p>
+                    <a href="#" class="blood-btn"><i class="fas fa-plus"></i>Blood Bank</a>
+                    <p class="contacts"> <span>Get Us : </span><a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </p>
+                </section>
+                <section>
+                    <h2>Department</h2>
+                    <ul>
+                        <li><a href="#">Medecine and Health</a></li>
+                        <li><a href="#">Dental Care</a></li>
+                        <li><a href="#">Eye Treatment</a></li>
+                        <li><a href="#">Children Chare</a></li>
+                        <li><a href="#">Traumatology</a></li>
+                        <li><a href="#">X-ray</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Useful Links</h2>
+                    <ul>
+                        <li><a href="#">Ambulance</a></li>
+                        <li><a href="#">Emergency</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Project</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Our Branches</h2>
+                    <h3><u>ACMH Hospital:</u></h3>
+                    <p>4992 Bryan Avenue, Prior Lake, Minnesota
+                        Phone: 651-379-4698</p>
+                    <h3><u>Central Hospital:</u></h3>
+                    <p> 2001 Kia Magentis, Prior Lake, Minnesota
+                        Phone: 651-379-4698</p>
+                </section>
+            </div>
+            <div class="copywrite">
+                <section>
+                    <div class="row">
+                        <div class="col-md-9 col-12">
+                            <p>
+                                &#169; 2020 <span>Clinicom.</span> All Rights Reserved by <span>validtemplates</span>
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-12">
+                            <ul>
+                                <li><a href="#">terms</a></li>
+                                <li><a href="#">privacy</a></li>
+                                <li><a href="#">support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
