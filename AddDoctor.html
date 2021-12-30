@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
+    <link rel="stylesheet" href="Fonts/all.min.css" />
+    <link rel="stylesheet" href="Fonts/fontawesome.min.css" />
+    <link rel="stylesheet" href="CSS/lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="index.html"><img src="Images/logo-light.png" alt="logo"></a></div>
+        <ul class="menu">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="AboutUs.html">About Us</a>
+            </li>
+            <li>
+                <a href="Departments.html">Departments</a>
+            </li>
+            <li>
+                <a href="Doctors.html">Doctors</a>
+            </li>
+            <li>
+                <a href="ContactUs.html">Contact</a>
+            </li>
+        </ul>
+
+        <div class="buttons">
+            <a href="login.html"><button class="login-btn">Login</button></a>
+            <a href="SignUp.html"><button class="register-btn">Sign up</button></a>
+        </div>
+    </nav>
+    <main>
+        <div class="add-doctor-container">
+            <form action=" " method="post">
+                <h2>add <span>new doctor</span></h2>
+                <input type="text" name="username" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="phone" placeholder="Phone" required>
+                <select name="Department" id="dep">
+                    <option value="dep">Department</option>
+                    <option value="medicine">Medicine</option>
+                    <option value="Dental care">Dental Care</option>
+                    <option value="traumatology">Traumatology</option>
+                    <option value="Surgery">Surgery</option>
+                </select>
+                <input type="file" id="myfile" name="doctor photo" value="Add docotor Photo" >
+                <input type="submit" value="Add">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
