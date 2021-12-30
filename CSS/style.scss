@@ -9,7 +9,7 @@ header .header-container {
   background-size: cover;
   overflow: hidden;
   animation: bg-pan-bottom 2s both;
-
+ 
   &::before {
     content: "";
     position: absolute;
@@ -18,9 +18,11 @@ header .header-container {
     bottom: 0px;
     left: 0px;
     background-color: rgba(0, 0, 0, 0.3);
+    z-index: -9;
   }
 
   .content {
+  
     margin: 180px 150px;
 
     h1 {
@@ -734,6 +736,7 @@ main .dep-content {
             text-decoration: none;
             width: 60%;
             margin: 10px auto;
+            text-align: center;
             background: rgb(0, 172, 193);
             background: linear-gradient(
               90deg,
