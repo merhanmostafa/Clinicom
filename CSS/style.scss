@@ -26,7 +26,7 @@ header .header-container {
 
   .content {
     margin: 130px 150px 70px 150px;
-z-index: 1;
+    z-index: 1;
 
     h1 {
       color: $fourthcolor;
@@ -291,11 +291,12 @@ header .contactus-container {
 }
 main .contactus-content {
   .row {
-    margin: 50px 0px;
+    width: 95%;
+    margin: 50px auto;
   }
 
   form {
-    width: 80%;
+    width: 90%;
     margin: 35px auto;
     padding: 30px;
     border: 2px solid $primarycolor;
@@ -342,9 +343,10 @@ main .contactus-content {
     }
   }
   .col-md-5 {
-    margin: 20px auto;
+    margin: 15px auto;
 
     .box {
+      width: 90%;
       margin: 60px auto;
       position: relative;
 
@@ -640,6 +642,7 @@ header .departments-container {
     color: $fourthcolor;
     text-transform: capitalize;
     font-family: "bold";
+    margin-top: 20px;
     z-index: 1;
   }
 }

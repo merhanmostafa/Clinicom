@@ -20,7 +20,7 @@
   src: url(../Fonts/Inter-Bold.ttf);
 }
 
-/* for the background*/
+/* for the background of home page */
 @-webkit-keyframes bg-pan-bottom {
   0% {
     background-position: 50% 0;
@@ -42,6 +42,7 @@
 /**
  * ----------------------------------------
  * animation color-change-2x
+ * for contact us background
  * ----------------------------------------
  */
 @-webkit-keyframes color-change-2x {
@@ -65,6 +66,7 @@
 /**
  * ----------------------------------------
  * animation heartbeat
+ * for doctors' card and icons in department card
  * ----------------------------------------
  */
 @-webkit-keyframes heartbeat {
@@ -237,7 +239,6 @@ nav .buttons a button:hover {
 /* footer*/
 footer .container {
   position: relative;
-  height: 75vh;
   width: 100%;
   max-width: 100%;
   background-image: url(../Images/footer-bg.png);
@@ -301,6 +302,7 @@ footer .container .footer-sections section h2::after {
 footer .container .footer-sections section ul {
   list-style: none;
   margin: 30px auto;
+  padding: 0px;
 }
 
 footer .container .footer-sections section ul li {
@@ -777,11 +779,12 @@ header .contactus-container h1 {
 }
 
 main .contactus-content .row {
-  margin: 50px 0px;
+  width: 95%;
+  margin: 50px auto;
 }
 
 main .contactus-content form {
-  width: 80%;
+  width: 90%;
   margin: 35px auto;
   padding: 30px;
   border: 2px solid #00acc1;
@@ -833,10 +836,11 @@ main .contactus-content form input[type="submit"] {
 }
 
 main .contactus-content .col-md-5 {
-  margin: 20px auto;
+  margin: 15px auto;
 }
 
 main .contactus-content .col-md-5 .box {
+  width: 90%;
   margin: 60px auto;
   position: relative;
 }
@@ -1183,6 +1187,7 @@ header .departments-container h1 {
   color: #fff;
   text-transform: capitalize;
   font-family: "bold";
+  margin-top: 20px;
   z-index: 1;
 }
 

@@ -19,7 +19,7 @@
   src: url(../Fonts/Inter-Bold.ttf);
 }
 
-/* for the background*/
+/* for the background of home page */
 @-webkit-keyframes bg-pan-bottom {
   0% {
     background-position: 50% 0;
@@ -43,6 +43,7 @@
 /**
  * ----------------------------------------
  * animation color-change-2x
+ * for contact us background
  * ----------------------------------------
  */
 @-webkit-keyframes color-change-2x {
@@ -65,6 +66,7 @@
 /**
  * ----------------------------------------
  * animation heartbeat
+ * for doctors' card and icons in department card
  * ----------------------------------------
  */
 @-webkit-keyframes heartbeat {
@@ -212,7 +214,6 @@ nav {
 /* footer*/
 footer .container {
   position: relative;
-  height: 75vh;
   width: 100%;
   max-width: 100%;
   background-image: url(../Images/footer-bg.png);
@@ -263,6 +264,7 @@ footer .container {
       ul {
         list-style: none;
         margin: 30px auto;
+        padding: 0px;
 
         li {
           margin: 20px auto;

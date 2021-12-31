@@ -3273,12 +3273,11 @@ fieldset:disabled .btn {
 }
 .btn-link {
   font-weight: 400;
-  color: #000;
+  color: #007bff;
   text-decoration: none;
-  font-family: 'semibold';
 }
 .btn-link:hover {
-  color: #00acc1;
+  color: #0056b3;
 }
 .btn-link.disabled,
 .btn-link:disabled {
