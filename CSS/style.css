@@ -446,11 +446,20 @@ footer .container .copywrite section ul li a:hover {
 /* Home Page*/
 header .header-container {
   position: relative;
-  height: 100vh;
   width: 100%;
   background-image: url(../Images/header_img.jpg);
   background-size: cover;
   overflow: hidden;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-animation: bg-pan-bottom 2s both;
           animation: bg-pan-bottom 2s both;
 }
@@ -462,12 +471,13 @@ header .header-container::before {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: -9;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
 }
 
 header .header-container .content {
-  margin: 180px 150px;
+  margin: 130px 150px 70px 150px;
+  z-index: 1;
 }
 
 header .header-container .content h1 {
@@ -475,6 +485,7 @@ header .header-container .content h1 {
   font-size: 75px;
   font-family: "regular";
   text-transform: capitalize;
+  margin-top: 55px;
 }
 
 header .header-container .content h1 span {
@@ -510,6 +521,7 @@ header .header-container .content a.discover-btn:hover {
 header .header-container .content form {
   background-color: rgba(255, 255, 255, 0.4);
   padding: 60px 20px;
+  margin-top: 30px;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -547,8 +559,7 @@ header .header-container .content form select {
   outline: none;
 }
 
-header .header-container .content form input[type="submit"] {
-  width: 60%;
+header .header-container .content form button[type="submit"] {
   text-align: center;
   margin: 30px auto;
   background: #00acc1;
@@ -556,8 +567,8 @@ header .header-container .content form input[type="submit"] {
   background: linear-gradient(90deg, #00acc1 0%, #004d83 100%);
   color: #fff;
   font-family: "bold";
-  font-size: 15px;
-  padding: 15px 80px;
+  font-size: 16px;
+  padding: 12px 80px;
   border-radius: 25px;
   text-transform: capitalize;
   outline: none;
@@ -1310,5 +1321,102 @@ main .dep-content .departments .row .card .card-body a.btn {
   text-transform: capitalize;
   outline: none;
   border: none;
+}
+
+main .dep-content .staff {
+  background-color: #c2eefa;
+  padding: 30px;
+}
+
+main .dep-content .staff .row {
+  width: 90%;
+  margin: auto;
+}
+
+main .dep-content .staff .row .col-lg-6,
+main .dep-content .staff .row .col-md-12,
+main .dep-content .staff .row .col-12 .statistics {
+  margin: 20px auto;
+}
+
+main .dep-content .staff .row .col-lg-6 .col-lg-4,
+main .dep-content .staff .row .col-lg-6 .col-md-6,
+main .dep-content .staff .row .col-lg-6 .col-12,
+main .dep-content .staff .row .col-md-12 .col-lg-4,
+main .dep-content .staff .row .col-md-12 .col-md-6,
+main .dep-content .staff .row .col-md-12 .col-12,
+main .dep-content .staff .row .col-12 .statistics .col-lg-4,
+main .dep-content .staff .row .col-12 .statistics .col-md-6,
+main .dep-content .staff .row .col-12 .statistics .col-12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .dep-content .staff .row .col-lg-6 .col-lg-4 h3,
+main .dep-content .staff .row .col-lg-6 .col-md-6 h3,
+main .dep-content .staff .row .col-lg-6 .col-12 h3,
+main .dep-content .staff .row .col-md-12 .col-lg-4 h3,
+main .dep-content .staff .row .col-md-12 .col-md-6 h3,
+main .dep-content .staff .row .col-md-12 .col-12 h3,
+main .dep-content .staff .row .col-12 .statistics .col-lg-4 h3,
+main .dep-content .staff .row .col-12 .statistics .col-md-6 h3,
+main .dep-content .staff .row .col-12 .statistics .col-12 h3 {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-family: "semibold";
+  color: #000;
+}
+
+main .dep-content .staff .row .col-lg-6 .col-lg-4 span,
+main .dep-content .staff .row .col-lg-6 .col-md-6 span,
+main .dep-content .staff .row .col-lg-6 .col-12 span,
+main .dep-content .staff .row .col-md-12 .col-lg-4 span,
+main .dep-content .staff .row .col-md-12 .col-md-6 span,
+main .dep-content .staff .row .col-md-12 .col-12 span,
+main .dep-content .staff .row .col-12 .statistics .col-lg-4 span,
+main .dep-content .staff .row .col-12 .statistics .col-md-6 span,
+main .dep-content .staff .row .col-12 .statistics .col-12 span {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-family: "regular";
+  color: #00acc1;
+}
+
+main .dep-content .staff .row p {
+  width: 95%;
+  margin: 20px;
+  color: #000;
+  text-transform: lowercase;
+  font-family: "regular";
+  line-height: 25px;
+  font-size: 15px;
+  text-align-last: initial;
+}
+
+main .dep-content .staff .row p::first-letter {
+  text-transform: capitalize;
+}
+
+main .dep-content .staff .row a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "semibold";
+  font-size: 18px;
+  color: #fff;
+  background: #00acc1;
+  background: -webkit-gradient(linear, left top, right top, from(#00acc1), to(#004d83));
+  background: linear-gradient(90deg, #00acc1 0%, #004d83 100%);
+  border-radius: 30px;
+  padding: 12px 32px;
+  margin-left: 20px;
+  line-height: 3.5;
 }
 /*# sourceMappingURL=style.css.map */
