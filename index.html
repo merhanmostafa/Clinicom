@@ -10,45 +10,45 @@
     <link rel="stylesheet" href="Fonts/all.min.css" />
     <link rel="stylesheet" href="Fonts/fontawesome.min.css" />
     <link rel="stylesheet" href="CSS/lib/bootstrap.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
+    <nav>
+        <div class="logo"><a href="index.html"><img src="Images/logo-light.png" alt="logo"></a></div>
+        <ul class="menu">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="AboutUs.html">About Us</a>
+            </li>
+            <li>
+                <a href="Departments.html">Departments</a>
+            </li>
+            <li>
+                <a href="Doctors.html">Doctors</a>
+            </li>
+            <li>
+                <a href="ContactUs.html">Contact</a>
+            </li>
+        </ul>
+
+        <div class="buttons">
+            <a href="login.html"><button class="login-btn">Login</button></a>
+            <a href="SignUp.html"><button class="register-btn">Sign up</button></a>
+        </div>
+    </nav>
     <header>
         <div class="header-container">
-            <nav>
-                <div class="logo"><a href="index.html"><img src="Images/logo-light.png" alt="logo"></a></div>
-                <ul class="menu">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="AboutUs.html">About Us</a>
-                    </li>
-                    <li>
-                        <a href="Departments.html">Departments</a>
-                    </li>
-                    <li>
-                        <a href="Doctors.html">Doctors</a>
-                    </li>
-                    <li>
-                        <a href="ContactUs.html">Contact</a>
-                    </li>
-                </ul>
-
-                <div class="buttons">
-                    <a href="login.html"><button class="login-btn">Login</button></a>
-                    <a href="SignUp.html"><button class="register-btn">Sign up</button></a>
-                </div>
-            </nav>
+         
             <div class="content">
                 <div class="row">
                     <div class="col-md-7 col-12">
                         <h1>Meet the <span>Best Doctors</span></h1>
                         <p>Preference entreaties compliment motionless ye literature. Day behaviour explained law
                             remainder.</p>
-                        <a href="#" class="discover-btn">Discover</a>
+                        <a href="Departments.html" class="discover-btn">Discover</a>
                     </div>
                     <div class="col-md-5 col-12">
                         <form action="" method="post">
@@ -67,7 +67,7 @@
                                 <option value="Surgery">Surgery</option>
                             </select>
                             <input type="datetime-local" name="date">
-                            <input type="submit" value="submit query" id="submit">
+                            <button type="submit" id="submit">submit query</button>
                         </form>
                     </div>
                 </div>
