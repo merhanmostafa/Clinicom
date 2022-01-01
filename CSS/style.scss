@@ -21,7 +21,7 @@ header .header-container {
     bottom: 0px;
     left: 0px;
     background: rgba(0, 0, 0, 0.3);
-   z-index: 0;
+    z-index: 0;
   }
 
   .content {
@@ -96,7 +96,6 @@ header .header-container {
         outline: none;
       }
       button[type="submit"] {
-       
         text-align: center;
         margin: 30px auto;
         background: rgb(0, 172, 193);
@@ -796,7 +795,7 @@ main .dep-content {
       }
       p {
         width: 95%;
-        margin:20px;
+        margin: 20px;
         color: $thirdcolor;
         text-transform: lowercase;
         font-family: "regular";
@@ -824,6 +823,280 @@ main .dep-content {
         margin-left: 20px;
         line-height: 3.5;
       }
+    }
+  }
+}
+
+/* About Us */
+header .aboutus-container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background: url(../Images/aboutus_bg.jpg);
+  overflow: hidden;
+  background-size: cover;
+  background-position-y: 20%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: "bold";
+    color: $fourthcolor;
+    text-transform: capitalize;
+    font-family: "bold";
+    margin-top: 40px;
+    z-index: 1;
+
+    i {
+      margin-right: 15px;
+    }
+  }
+}
+main .aboutus-container {
+  section.aboutUs {
+    .row {
+      width: 90%;
+      margin: 50px auto;
+
+      .col-lg-6,
+      .col-md-12,
+      .col-12 {
+        .doc-imgs {
+          width: 90%;
+          margin: 40px auto 0px auto;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          align-content: center;
+          .img1,
+          .img2 {
+            border: 15px solid $primarycolor;
+          }
+
+          img.img1 {
+            position: relative;
+            width: 70%;
+            height: 100%;
+          }
+          img.img2 {
+            position: relative;
+            width: 58%;
+            height: 58%;
+            transform: translate(-40%, 27%);
+          }
+          i {
+            color: $primarycolor;
+            font-size: 55px;
+            background-color: $fourthcolor;
+            padding: 40px;
+            border-radius: 50%;
+            transform: translate(135%, 90%);
+            position: absolute;
+            z-index: 2;
+          }
+        }
+      }
+      .col-lg-6,
+      .col-md-12,
+      .col-12 {
+        .details {
+          width: 90%;
+          margin: 40px auto;
+
+          h3 {
+            font-family: "semibold";
+            font-size: 26px;
+            text-transform: capitalize;
+            color: $primarycolor;
+          }
+          p.description {
+            font-family: "regular";
+            color: $fifthcolor;
+            margin-bottom: 15px;
+            position: relative;
+            &::first-letter {
+              text-transform: capitalize;
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              width: 90%;
+              height: 0.5px;
+              margin: auto;
+              background: $sixthcolor;
+              bottom: -15px;
+            }
+          }
+          p.title {
+            text-transform: capitalize;
+            margin: 15px auto;
+            color: $thirdcolor;
+            font-size: 30px;
+            font-family: "bold";
+          }
+          h2 {
+            font-family: "semibold";
+            font-size: 24px;
+            text-transform: capitalize;
+            color: $thirdcolor;
+            margin-top: 30px;
+          }
+          ul {
+            display: flex;
+            margin: 15px auto;
+            flex-direction: column;
+            list-style: none;
+            text-transform: capitalize;
+            li {
+              font-size: 15px;
+              font-family: "bold";
+              color: $fifthcolor;
+              margin-bottom: 10px;
+              &:before {
+                content: "\f00c"; /* FontAwesome Unicode */
+                font-family: FontAwesome;
+                color: $primarycolor;
+                display: inline-block;
+                margin-left: -1.3em; /* same as padding-left set on li */
+                width: 1.3em; /* same as padding-left set on li */
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  section.cards {
+    width: 90%;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      padding: 10px;
+      text-align: center;
+      border: 1px solid $primarycolor;
+
+      i {
+        font-size: 55px;
+        color: $primarycolor;
+        margin: 15px auto;
+      }
+      h5.card-title {
+        font-family: "semibold";
+        font-size: 25px;
+        text-transform: capitalize;
+        background: linear-gradient(
+          to left,
+          $sixthcolor 0%,
+          $primarycolor 50%,
+          $secondcolor 100%
+        );
+        /* Mask the color to the text, and remove the rest  */
+        -webkit-background-clip: text;
+        /* Make the text fill color value transparent so the masked background color comes through */
+        -webkit-text-fill-color: transparent;
+      }
+
+      p {
+        font-family: "regular";
+        color: $thirdcolor;
+        font-size: 15px;
+        line-height: 25px;
+      }
+      a.btn {
+        text-transform: capitalize;
+        text-decoration: none;
+        font: 15px "semibold";
+        color: $primarycolor;
+        border: 1px solid $primarycolor;
+        border-radius: 20px;
+        padding: 10px 20px;
+        margin: 10px;
+        &:hover {
+          color: $fourthcolor;
+          background-color: $primarycolor;
+        }
+      }
+      .card-text {
+        font-family: "regular";
+        margin: 20px auto;
+        color: $thirdcolor;
+
+        .row {
+          .col-lg-6,
+          .col-12 {
+            padding: 0px;
+            margin: 10px auto;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            h4 {
+              font-family: "semibold";
+              font-size: 15px;
+              color: $thirdcolor;
+            }
+            h5,
+            span {
+              font-family: "regular";
+              font-size: 15px;
+              color: $thirdcolor;
+            }
+            span {
+              background: $primarycolor;
+              color: $fourthcolor;
+              padding: 8px 10px;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  section.deps {
+    margin: 100px auto;
+    background: url(../Images/pattern.png) no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    background-position-y: -30px;
+
+    h1.dep {
+      color: $primarycolor;
+      font-family: "bold";
+      font-size: 20px;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 10px auto;
+    }
+    h2.dep {
+      color: $thirdcolor;
+      font-family: "bold";
+      font-size: 45px;
+      text-transform: capitalize;
+      text-align: center;
+      margin: 20px auto 50px auto;
     }
   }
 }
